@@ -27,6 +27,16 @@
       ],
       "plugin": "upload",
       "required": true
+    },
+    "categories": {
+      "collection": "category",
+      "via": "restaurants"
+    },
+    "restaurant_hours": {
+      "type": "component",
+      "repeatable": true,
+      "component": "hours.hours-of-operation",
+      "required": true
     }
   }
 }
