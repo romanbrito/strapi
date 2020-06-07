@@ -37,10 +37,6 @@
       "repeatable": true,
       "component": "hours.hours-of-operation",
       "required": true
-    },
-    "dishes": {
-      "via": "restaurant",
-      "collection": "dish"
     }
   }
 }
