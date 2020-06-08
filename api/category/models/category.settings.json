@@ -18,6 +18,10 @@
       "via": "categories",
       "collection": "restaurant",
       "dominant": true
+    },
+    "dishes": {
+      "via": "category",
+      "collection": "dish"
     }
   }
 }
