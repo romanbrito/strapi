@@ -2,7 +2,7 @@
 const { v4:uuidv4 } = require('uuid')
 
 /**
- * Lifecycle callbacks for the `dish` model.
+ * Lifecycle callbacks for the `product` model.
  */
 
 module.exports = {
@@ -35,7 +35,6 @@ module.exports = {
   beforeCreate: async (model, attrs, options) => {
     model.set('uid', uuidv4())
   },
-
   // After creating a value.
   // Fired after an `insert` query.
   // afterCreate: async (model, attrs, options) => {},

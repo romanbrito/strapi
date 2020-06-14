@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "Product"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "uid": {
+      "type": "uid"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "good",
+        "service"
+      ],
+      "default": "good"
+    },
+    "url": {
+      "type": "string"
+    },
+    "metadata": {
+      "type": "json"
+    },
+    "caption": {
+      "type": "string"
+    },
+    "shippable": {
+      "type": "boolean",
+      "default": false
+    },
+    "category": {
+      "via": "products",
+      "model": "category"
+    },
+    "restaurants": {
+      "collection": "restaurant",
+      "via": "products",
+      "dominant": true
+    }
+  }
+}

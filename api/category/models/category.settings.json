@@ -14,14 +14,9 @@
       "required": true,
       "unique": true
     },
-    "restaurants": {
-      "via": "categories",
-      "collection": "restaurant",
-      "dominant": true
-    },
-    "dishes": {
-      "via": "category",
-      "collection": "dish"
+    "products": {
+      "collection": "product",
+      "via": "category"
     }
   }
 }

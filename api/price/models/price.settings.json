@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prices",
+  "info": {
+    "name": "price"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "currency": {
+      "type": "enumeration",
+      "enum": [
+        "usd"
+      ],
+      "default": "usd"
+    },
+    "unit_amount": {
+      "type": "integer",
+      "max": 10000
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    },
+    "metadata": {
+      "type": "json"
+    },
+    "nickname": {
+      "type": "string"
+    },
+    "product_id": {
+      "type": "string"
+    }
+  }
+}
