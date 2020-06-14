@@ -9,6 +9,9 @@
     "timestamps": true
   },
   "attributes": {
+    "uid": {
+      "type": "uuid"
+    },
     "name": {
       "type": "string"
     },
