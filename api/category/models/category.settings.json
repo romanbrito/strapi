@@ -13,10 +13,6 @@
       "type": "string",
       "required": true,
       "unique": true
-    },
-    "products": {
-      "collection": "product",
-      "via": "category"
     }
   }
 }

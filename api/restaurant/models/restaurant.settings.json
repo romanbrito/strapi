@@ -26,7 +26,7 @@
         "videos"
       ],
       "plugin": "upload",
-      "required": true
+      "required": false
     },
     "restaurant_hours": {
       "type": "component",
@@ -34,9 +34,57 @@
       "component": "hours.hours-of-operation",
       "required": true
     },
-    "products": {
-      "via": "restaurants",
-      "collection": "product"
+    "address": {
+      "type": "string"
+    },
+    "zip": {
+      "type": "string"
+    },
+    "city": {
+      "type": "enumeration",
+      "enum": [
+        "Austin",
+        "Dallas",
+        "Galveston",
+        "Houston",
+        "Irving",
+        "Katy",
+        "Laredo",
+        "McAllen",
+        "Oklahoma_City",
+        "Richardson",
+        "San_Antonio",
+        "Sunset_Valley",
+        "The_Colony"
+      ]
+    },
+    "state": {
+      "type": "enumeration",
+      "enum": [
+        "OK",
+        "TX"
+      ]
+    },
+    "mcallen_products": {
+      "collection": "mcallen-product",
+      "via": "restaurant"
+    },
+    "label": {
+      "type": "uid"
+    },
+    "restaurant_id": {
+      "type": "uid",
+      "required": false
+    },
+    "coordinates": {
+      "type": "component",
+      "repeatable": false,
+      "component": "location.coordinates"
+    },
+    "menu": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu.menu"
     }
   }
 }

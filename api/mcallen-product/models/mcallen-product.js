@@ -1,7 +1,8 @@
 'use strict';
+const { v4:uuidv4 } = require('uuid')
 
 /**
- * Lifecycle callbacks for the `product` model.
+ * Lifecycle callbacks for the `mcallen-product` model.
  */
 
 module.exports = {
@@ -31,7 +32,9 @@ module.exports = {
 
   // Before creating a value.
   // Fired before an `insert` query.
-  // beforeCreate: async (model, attrs, options) => {},
+  beforeCreate: async (model, attrs, options) => {
+    model.set('uid', uuidv4())
+  },
 
   // After creating a value.
   // Fired after an `insert` query.

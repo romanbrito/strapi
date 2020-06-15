@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_menu_menus",
+  "info": {
+    "name": "menu",
+    "icon": "copy"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "pages": {
+      "type": "integer"
+    }
+  }
+}

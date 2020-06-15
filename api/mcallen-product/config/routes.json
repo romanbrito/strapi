@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mcallen-products",
+      "handler": "mcallen-product.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mcallen-products/count",
+      "handler": "mcallen-product.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mcallen-products/:id",
+      "handler": "mcallen-product.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mcallen-products",
+      "handler": "mcallen-product.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mcallen-products/:id",
+      "handler": "mcallen-product.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mcallen-products/:id",
+      "handler": "mcallen-product.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

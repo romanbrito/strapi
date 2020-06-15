@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Lifecycle callbacks for the `product` model.
+ * Lifecycle callbacks for the `mcallen-price` model.
  */
 
 module.exports = {
