@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mcallenprices",
+      "handler": "mcallenprice.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mcallenprices/count",
+      "handler": "mcallenprice.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mcallenprices/:id",
+      "handler": "mcallenprice.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mcallenprices",
+      "handler": "mcallenprice.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mcallenprices/:id",
+      "handler": "mcallenprice.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mcallenprices/:id",
+      "handler": "mcallenprice.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

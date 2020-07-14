@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mcallenprices",
+  "info": {
+    "name": "mcallenprice"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "enumeration",
+      "enum": [
+        "usd"
+      ],
+      "default": "usd"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    },
+    "metadata": {
+      "type": "json"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

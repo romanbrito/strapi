@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mcallenproducts",
+  "info": {
+    "name": "mcallenproduct"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "product": {
+      "model": "product"
+    },
+    "UID": {
+      "type": "uid"
+    },
+    "restaurant": {
+      "model": "restaurant",
+      "via": "mcallenproducts"
+    },
+    "mcallenprice": {
+      "model": "mcallenprice"
+    }
+  }
+}
