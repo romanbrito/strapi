@@ -1,7 +1,7 @@
 {
   "name": "strapi-3",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
