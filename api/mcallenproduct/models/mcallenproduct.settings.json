@@ -15,13 +15,6 @@
     "product": {
       "model": "product"
     },
-    "UID": {
-      "type": "uid"
-    },
-    "restaurant": {
-      "model": "restaurant",
-      "via": "mcallenproducts"
-    },
     "mcallenprice": {
       "model": "mcallenprice"
     }

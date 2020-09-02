@@ -12,6 +12,12 @@
     "name": {
       "type": "string"
     },
+    "description": {
+      "type": "richtext"
+    },
+    "unit_amount": {
+      "type": "biginteger"
+    },
     "currency": {
       "type": "enumeration",
       "enum": [
@@ -19,15 +25,8 @@
       ],
       "default": "usd"
     },
-    "active": {
-      "type": "boolean",
-      "default": true
-    },
-    "metadata": {
+    "modifiers": {
       "type": "json"
-    },
-    "description": {
-      "type": "string"
     }
   }
 }

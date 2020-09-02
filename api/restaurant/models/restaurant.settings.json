@@ -10,9 +10,7 @@
   },
   "attributes": {
     "name": {
-      "type": "string",
-      "required": true,
-      "unique": true
+      "type": "string"
     },
     "description": {
       "type": "richtext"
@@ -21,70 +19,18 @@
       "collection": "file",
       "via": "related",
       "allowedTypes": [
-        "files",
         "images",
+        "files",
         "videos"
       ],
       "plugin": "upload",
       "required": false
-    },
-    "restaurant_hours": {
-      "type": "component",
-      "repeatable": true,
-      "component": "hours.hours-of-operation",
-      "required": true
     },
     "address": {
       "type": "string"
     },
     "zip": {
       "type": "string"
-    },
-    "city": {
-      "type": "enumeration",
-      "enum": [
-        "Austin",
-        "Dallas",
-        "Galveston",
-        "Houston",
-        "Irving",
-        "Katy",
-        "Laredo",
-        "McAllen",
-        "Oklahoma_City",
-        "Richardson",
-        "San_Antonio",
-        "Sunset_Valley",
-        "The_Colony"
-      ]
-    },
-    "state": {
-      "type": "enumeration",
-      "enum": [
-        "OK",
-        "TX"
-      ]
-    },
-    "mcallen_products": {
-      "collection": "mcallen-product",
-      "via": "restaurant"
-    },
-    "label": {
-      "type": "uid"
-    },
-    "restaurant_id": {
-      "type": "uid",
-      "required": false
-    },
-    "coordinates": {
-      "type": "component",
-      "repeatable": false,
-      "component": "location.coordinates"
-    },
-    "menu": {
-      "type": "component",
-      "repeatable": true,
-      "component": "menu.menu"
     }
   }
 }

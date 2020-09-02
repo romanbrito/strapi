@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "products",
   "info": {
-    "name": "Product"
+    "name": "product"
   },
   "options": {
     "increments": true,
@@ -10,15 +10,10 @@
   },
   "attributes": {
     "name": {
-      "type": "string",
-      "required": true
-    },
-    "active": {
-      "type": "boolean",
-      "default": true
+      "type": "string"
     },
     "description": {
-      "type": "string"
+      "type": "richtext"
     },
     "images": {
       "collection": "file",
@@ -31,35 +26,15 @@
       "plugin": "upload",
       "required": false
     },
-    "type": {
-      "type": "enumeration",
-      "enum": [
-        "good",
-        "service"
-      ],
-      "default": "good"
-    },
-    "url": {
-      "type": "string"
-    },
-    "metadata": {
-      "type": "json"
-    },
-    "caption": {
-      "type": "string"
-    },
-    "shippable": {
-      "type": "boolean",
-      "default": false
-    },
     "category": {
       "type": "enumeration",
       "enum": [
         "starters",
         "signature_cheesesteaks",
-        "build_your_own",
-        "kids"
-      ]
+        "build_your_own_cheesesteak",
+        "for_the_kiddos"
+      ],
+      "default": "signature_cheesesteaks"
     }
   }
 }
